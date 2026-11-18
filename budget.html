@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Budget Planner | MoneyWise
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="site-header">
+   <a class="brand" href="index.html">
+    <span class="brand-icon">
+     🌿
+    </span>
+    MoneyWise
+   </a>
+   <button aria-label="Toggle navigation" class="menu-toggle">
+    ☰
+   </button>
+   <nav class="nav">
+    <a href="index.html">
+     Home
+    </a>
+    <a href="education.html">
+     Education
+    </a>
+    <a class="active" href="budget.html">
+     Budget Planner
+    </a>
+    <a href="savings.html">
+     Savings &amp; Debt
+    </a>
+    <details class="more-menu"><summary>Other</summary><div class="more-links"><a href="money-basics.html">Money Basics</a><a href="needs-wants.html">Needs vs. Wants</a><a href="income.html">Income</a><a href="expenses.html">Expenses</a><a href="budget.html">Budget Planner</a><a href="budgeting-guide.html">Budgeting Guide</a><a href="savings.html">Savings & Debt</a><a href="emergency-fund.html">Emergency Fund</a><a href="saving-goals.html">Savings Goals</a><a href="smart-shopping.html">Smart Spending</a><a href="debt-basics.html">Debt Basics</a><a href="financial-safety.html">Financial Safety</a></div></details><a href="about.html">
+     About
+    </a>
+   </nav>
+  </header>
+  <main>
+   <section class="hero inner-hero budget-hero">
+    <div class="hero-copy">
+     <p class="eyebrow">
+      PLAN WITH PURPOSE
+     </p>
+     <h1>
+      Budget Planner
+     </h1>
+     <p>
+      Plan your expenses and achieve your savings goals.
+     </p>
+    </div>
+    <div class="hero-illustration">
+     🧮
+     <span>
+      🪙
+     </span>
+    </div>
+   </section>
+   <section class="section">
+    <div class="budget-layout">
+     <section class="panel">
+      <h2>
+       Your Monthly Budget
+      </h2>
+      <p class="muted">
+       Enter your monthly income and expenses in Philippine pesos.
+      </p>
+      <form id="budget-form">
+       <label for="income">
+        Monthly Income (₱)
+       </label>
+       <input id="income" min="0" placeholder="5000" required="" step="0.01" type="number"/>
+       <label for="food">
+        Food (₱)
+       </label>
+       <input id="food" min="0" step="0.01" type="number" value="1500"/>
+       <label for="transport">
+        Transportation (₱)
+       </label>
+       <input id="transport" min="0" step="0.01" type="number" value="1000"/>
+       <label for="school">
+        School Expenses (₱)
+       </label>
+       <input id="school" min="0" step="0.01" type="number" value="1000"/>
+       <label for="savings">
+        Savings (₱)
+       </label>
+       <input id="savings" min="0" step="0.01" type="number" value="1000"/>
+       <label for="other">
+        Other Expenses (₱)
+       </label>
+       <input id="other" min="0" step="0.01" type="number" value="500"/>
+       <button class="btn full-btn" type="submit">
+        Calculate Budget
+       </button>
+      </form>
+      <p aria-live="polite" class="form-message" id="budget-message">
+      </p>
+     </section>
+     <section class="panel summary-panel">
+      <h2>
+       Your Budget Summary
+      </h2>
+      <div class="total-circle">
+       <span>
+        Total Income
+       </span>
+       <strong id="total-income">
+        ₱0
+       </strong>
+      </div>
+      <ul class="legend">
+       <li>
+        <span class="dot food">
+        </span>
+        Food
+        <strong id="food-value">
+         ₱0
+        </strong>
+       </li>
+       <li>
+        <span class="dot transport">
+        </span>
+        Transport
+        <strong id="transport-value">
+         ₱0
+        </strong>
+       </li>
+       <li>
+        <span class="dot school">
+        </span>
+        School
+        <strong id="school-value">
+         ₱0
+        </strong>
+       </li>
+       <li>
+        <span class="dot savings">
+        </span>
+        Savings
+        <strong id="savings-value">
+         ₱0
+        </strong>
+       </li>
+       <li>
+        <span class="dot other">
+        </span>
+        Other
+        <strong id="other-value">
+         ₱0
+        </strong>
+       </li>
+      </ul>
+      <div class="balance-box">
+       <span>
+        Remaining Balance
+       </span>
+       <strong id="balance">
+        ₱0
+       </strong>
+      </div>
+      <p class="muted small">
+       Your balance is calculated from income minus all listed expenses and savings.
+      </p>
+     </section>
+    </div>
+   </section>
+  </main>
+  <footer class="footer">
+   <div>
+    <a class="brand footer-brand" href="index.html">
+     🌿 MoneyWise
+    </a>
+    <p>
+     Financial Literacy for a Brighter Tomorrow.
+    </p>
+   </div>
+   
+   <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="education.html">Education</a>
+    <a href="money-basics.html">Money Basics</a>
+    <a href="needs-wants.html">Needs vs. Wants</a>
+    <a href="income.html">Income</a>
+    <a href="expenses.html">Expenses</a>
+    <a href="budget.html">Budget Planner</a>
+    <a href="budgeting-guide.html">Budgeting Guide</a>
+    <a href="savings.html">Savings & Debt</a>
+    <a href="emergency-fund.html">Emergency Fund</a>
+    <a href="saving-goals.html">Savings Goals</a>
+    <a href="smart-shopping.html">Smart Spending</a>
+    <a href="debt-basics.html">Debt Basics</a>
+    <a href="financial-safety.html">Financial Safety</a>
+    <a href="about.html">About & Contact</a>
+   </div>
+   <p class="copyright">
+    &copy; 2026 MoneyWise. Learn. Plan. Save. Grow.
+   </p>
+  </footer>
+  <script src="script.js">
+  </script>
+ </body>
+</html>
+
